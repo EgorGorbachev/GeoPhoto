@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="common_elevation">0dp</dimen>
+    <dimen name="common_radius">12dp</dimen>
+    <dimen name="common_button_radius">8dp</dimen>
+    <dimen name="common_button_textSize">@dimen/common_textSize_m</dimen>
+    <dimen name="loader_progressBar_diameter">120dp</dimen>
+
+    <dimen name="common_textSize_xxs">4sp</dimen>
+    <dimen name="common_textSize_xs">8sp</dimen>
+    <dimen name="common_textSize_s">12sp</dimen>
+    <dimen name="common_textSize_m">16sp</dimen>
+    <dimen name="common_textSize_l">20sp</dimen>
+    <dimen name="common_textSize_xl">24sp</dimen>
+    <dimen name="common_textSize_2xl">28sp</dimen>
+    <dimen name="common_textSize_3xl">32sp</dimen>
+
+
+    <dimen name="button_insert">0sp</dimen>
+
+    <!-- auth and reg fragments-->
+    <dimen name="auth_reg_screen_title_size">30sp</dimen>
+    <dimen name="auth_reg_screen_title_margin_top">10dp</dimen>
+    <dimen name="auth_password_input_margin_start">16dp</dimen>
+    <dimen name="auth_password_input_margin_top">20dp</dimen>
+    <dimen name="auth_password_input_margin_end">16dp</dimen>
+    <dimen name="to_forgot_password_btn_margin_top">10dp</dimen>
+    <dimen name="to_forgot_password_btn_margin_end">16dp</dimen>
+    <dimen name="to_forgot_password_btn_text_size">16sp</dimen>
+    <dimen name="log_res_button_margin_start">16dp</dimen>
+    <dimen name="log_res_button_margin_top">30dp</dimen>
+    <dimen name="log_res_button_margin_end">16dp</dimen>
+    <dimen name="log_res_button_padding_top">10dp</dimen>
+    <dimen name="log_res_button_padding_bottom">10dp</dimen>
+    <dimen name="log_res_button_text_size">18sp</dimen>
+    <dimen name="to_register_btn">16sp</dimen>
+    <dimen name="to_register_text_size">16sp</dimen>
+    <dimen name="to_register_btn_margin_start">5dp</dimen>
+    <dimen name="reg_email_input_margin_top">40dp</dimen>
+    <dimen name="to_login_text_container_margin_top">20dp</dimen>
+    <dimen name="to_login_text">16sp</dimen>
+    <dimen name="to_login_btn_margin_start">5dp</dimen>
+    <dimen name="to_login_btn">16sp</dimen>
+    <dimen name="auth_email_input_margin_top">30dp</dimen>
+
+
+    <!-- forgot password fragments-->
+    <dimen name="forgot_password_message_margin_start">16dp</dimen>
+    <dimen name="forgot_password_message_margin_top">10dp</dimen>
+    <dimen name="forgot_password_message_margin_end">16dp</dimen>
+
+
+    <!-- Map fragment -->
+    <dimen name="current_location_button_margin_top">16dp</dimen>
+    <dimen name="current_location_button_margin_end">16dp</dimen>
+
+
+    <!-- Photo fragment -->
+    <dimen name="photo_to_gallery_button_insert_top">0dp</dimen>
+    <dimen name="photo_to_gallery_button_insert_bottom">0dp</dimen>
+    <dimen name="photo_location_info_container_padding">5dp</dimen>
+    <dimen name="photo_location_info_icon_margin_bottom">12dp</dimen>
+    <dimen name="photo_location_info_text_margin_bottom">12dp</dimen>
+    <dimen name="photo_location_info_text_padding_start">10dp</dimen>
+    <dimen name="photo_location_info_text_padding_end">10dp</dimen>
+    <dimen name="photo_location_info_text_size">18sp</dimen>
+    <dimen name="photo_hint_size">20sp</dimen>
+
+
+    <!-- Photo details fragment -->
+    <dimen name="photo_details_back_button_margin_start">6dp</dimen>
+    <dimen name="photo_details_back_button_margin_top">6dp</dimen>
+    <dimen name="photo_details_show_info_button_margin_end">16dp</dimen>
+    <dimen name="photo_details_show_info_button_border_width">0dp</dimen>
+    <dimen name="photo_details_show_info_button_margin_bottom">16dp</dimen>
+    <dimen name="photo_details_address_size">20sp</dimen>
+    <dimen name="photo_details_comment_title_margin_top">12dp</dimen>
+    <dimen name="photo_details_comment_size">16sp</dimen>
+    <dimen name="photo_details_comment_margin_top">8dp</dimen>
+
+
+    <!-- Photo gallery fragment -->
+    <dimen name="photo_gallery_back_button_margin_start">6dp</dimen>
+    <dimen name="photo_gallery_back_button_margin_top">6dp</dimen>
+    <dimen name="photo_gallery_recycler_margin_top">10dp</dimen>
+
+
+    <!-- Registration fragment -->
+    <dimen name="registration_to_login_container_margin_top">20dp</dimen>
+    <dimen name="registration_to_login_text_size">16sp</dimen>
+    <dimen name="registration_to_login_button_margin_start">5dp</dimen>
+    <dimen name="registration_to_login_button_size">16sp</dimen>
+    <dimen name="photo_details_edit_comment_button_margin_top">8dp</dimen>
+    <dimen name="photo_details_edit_comment_button_size">16sp</dimen>
+    <dimen name="photo_details_show_on_map_button_margin_top">8dp</dimen>
+    <dimen name="photo_details_show_on_map_button_size">16sp</dimen>
+
+
+</resources>

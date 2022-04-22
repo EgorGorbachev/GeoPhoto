@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "639126486131",
+    "project_id": "geophoto-326614",
+    "storage_bucket": "geophoto-326614.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639126486131:android:f62dc0e5f2450efe64be06",
+        "android_client_info": {
+          "package_name": "com.example.geophoto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639126486131-6jl821nvrmcap3p5aq9et6uqamhgdv86.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.geophoto",
+            "certificate_hash": "38e2c57e552c96d37f31037d88bf05784cd3e603"
+          }
+        },
+        {
+          "client_id": "639126486131-a0jg3305ui54obp1ai3036vsqrqc15e1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvtLYUfdNAlo9WTI8WKhKjCXfYKyf9QDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639126486131-a0jg3305ui54obp1ai3036vsqrqc15e1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

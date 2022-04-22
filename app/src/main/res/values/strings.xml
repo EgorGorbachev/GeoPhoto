@@ -1,6 +1,129 @@
 <resources>
+
+    <!-- Common strings -->
     <string name="app_name">GeoPhoto</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="baseComment">Empty comment</string>
+    <string name="email_example">peloton@mail.com</string>
+    <string name="password_example">•••••••</string>
+    <string name="date_example">03 Apr, 2022</string>
+    <string name="tap_to_exit">Press Back again to exit.</string>
+    <string name="not_available">This feature will be available later…</string>
+    <string name="close_caps">CLOSE</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="success">success</string>
+    <string name="error">Something wrong</string>
+    <string name="try_again">TRY AGAIN</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="base_comment"></string>
+    <string name="submit">Submit</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+
+    <!-- General -->
+    <string name="receipt_header_title">Receipt</string>
+    <string name="button_disable">You can`t go back now</string>
+    <string name="second_click">Press again to go to the Home screen. </string>
+
+    <string name="empty_email_field_message">You have to write your email!</string>
+    <string name="empty_password_field_message">You have to write your password!</string>
+
+
+    <!-- Errors -->
+    <string name="generic_error">Something went wrong. Please try later.</string>
+    <string name="server_error">Server error. Please try later.</string>
+    <string name="timeout_error">Timeout error. Please try again when network stabilizes.</string>
+    <string name="noInternetConnection_error">No internet connection. Please check the internet.</string>
+    <string name="unauthorized_error">Unauthorized error. Please sign-in and try again.</string>
+    <string name="notFound_error">404 error. Please try later.</string>
+    <string name="badRequest_error">400 error. Bad request. Please try later.</string>
+    <string name="emptyField_error">This field must not be empty.</string>
+
+
+    <!-- Permission -->
+    <string name="save_file_permission_error">To download a file, you must obtain permission to write to the phone storage.</string>
+    <string name="image_picker_permission_error">To set image profile, you must obtain permission to read to the phone storage.</string>
+    <string name="permission_denied_message">Permission denied. You can give permission in settings</string>
+    <string name="camera_permission_request_message">For using camera app need permission</string>
+
+
+    <!-- Authentication fragment -->
+    <string name="success_login_message">You logged successful!</string>
+    <string name="error_login_message">Something wrong! Chek your email and password!</string>
+    <string name="to_forgot_password_btn">Forgot password?</string>
+    <string name="auth_login_btn">LogIn</string>
+    <string name="check_box_remember_me_auth">Remember me</string>
+    <string name="to_register_text">Don`t have an account?</string>
+    <string name="to_register_btn">Register</string>
+
+
+    <!-- Registration fragment -->
+    <string name="reg_email_input_hint">Email</string>
+    <string name="reg_password_input_hint">Password</string>
+    <string name="reg_repeat_password_input_hint">Repeat Password</string>
+    <string name="to_login_text">Already have an account?</string>
+    <string name="to_login_btn">Login</string>
+    <string name="register_btn">Register</string>
+    <string name="check_box_remember_me_reg">Remember me</string>
+    <string name="password_length_error_message">Password must be 6 or more symbols!</string>
+    <string name="repeat_password_empty_field_message">You should repeat password!</string>
+    <string name="repeat_passwords_do_not_match_message">Your passwords don`t match!</string>
+    <string name="success_registration_message">You were registered successfully!</string>
+    <string name="registration_empty_email_field_message">You should write email!</string>
+    <string name="registration_empty_password_field_message">You should write password!</string>
+    <string name="registration_password_symbols_message">Password must be 6 or more symbols!</string>
+    <string name="registration_empty_password_confirm_field_message">You should repeat password!</string>
+    <string name="registration_passwords_do_not_match_message">Your passwords don`t match!</string>
+    <string name="registration_success_message">You were registered successfully!</string>
+
+
+    <!-- Forgot password fragment -->
+    <string name="forgot_password_empty_email_message">You have to write your email!</string>
+    <string name="forgot_password_success_sent_message">Email sent successfully to reset your password!</string>
+    <string name="forgot_pass_message">* enter your email address we`ll send you an email to reset your password.</string>
+
+
+    <!-- Map fragment -->
+    <string name="map_photo_location">Photo Location</string>
+    <string name="map_your_current_location">Your current location</string>
+
+
+    <!-- Photo details fragment -->
+    <string name="photo_details_your_comment">Your comment</string>
+    <string name="photo_details_address">Ул.Пушкина 888</string>
+    <string name="photo_details_comment_title">Your comment:</string>
+    <string name="photo_details_comment">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="photo_details_edit_comment_button">Change commet</string>
+    <string name="photo_details_show_on_map_button">Show on map</string>
+
+
+    <!-- Photo gallery fragment -->
+    <string name="delete_photo_dialog">Do you want to delete this photo?</string>
+    <string name="delete_photo_dialog_title">Delete photo</string>
+
+
+    <!-- Photo fragment -->
+    <string name="photo_first_message">Take a photo first!</string>
+    <string name="photo_dialog_message">Your comment</string>
+    <string name="photo_GPS_not_enabled_message">GPS not enabled</string>
+    <string name="photo_to_enable_positive_button">to enable</string>
+    <string name="photo_to_gallery_button">Gallery</string>
+    <string name="photo_location_info_text">Your location</string>
+    <string name="photo_add_comment_button">Add comment</string>
+    <string name="photo_take_photo_button">take a photo</string>
+    <string name="photo_hint">Take a photo</string>
+
+
+    <!-- Registration fragment -->
+    <string name="registration_password_input_hint">Password</string>
+    <string name="registration_repeat_password_input_hint">Repeat Password</string>
+    <string name="registration_to_login_text">Already have an account?</string>
+    <string name="registration_to_login_button">Login</string>
+    <string name="registration_button">Register</string>
+    <string name="registration_check_box">Remember me</string>
+
+
+
 </resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_orange"
+    tools:context=".ui.registration.RegistrationFragment"
+    tools:ignore="All">
+
+    <ImageView
+        android:id="@+id/registrationLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_worldwide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+    <TextView
+        android:id="@+id/registrationTitle"
+        style="@style/reg_auth_screen_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationLogo" />
+
+
+    <EditText
+        android:id="@+id/registrationEmailInput"
+        style="@style/reg_auth_screen_text_input"
+        android:layout_width="match_parent"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationTitle" />
+
+    <EditText
+        android:id="@+id/registrationPasswordInput"
+        style="@style/reg_auth_screen_text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/registration_password_input_hint"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationEmailInput" />
+
+    <EditText
+        android:id="@+id/registrationRepeatPasswordInput"
+        style="@style/reg_auth_screen_text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/registration_repeat_password_input_hint"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationPasswordInput" />
+
+
+    <LinearLayout
+        android:id="@+id/registrationToLoginContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/registration_to_login_container_margin_top"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/registrationRepeatPasswordInput">
+
+        <TextView
+            android:id="@+id/registrationToLoginText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:text="@string/registration_to_login_text"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/registration_to_login_text_size" />
+
+        <TextView
+            android:id="@+id/registrationToLoginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/registration_to_login_button_margin_start"
+            android:fontFamily="@font/bold"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/registration_to_login_button"
+            android:textColor="@color/green"
+            android:textSize="@dimen/registration_to_login_button_size" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/registrationButton"
+        style="@style/reg_auth_main_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registration_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationToLoginContainer" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <CheckBox
+        android:id="@+id/registrationCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registration_check_box"
+        android:textColor="@color/text_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

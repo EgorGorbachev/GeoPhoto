@@ -5,26 +5,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.fragments.GalleryFr">
+    tools:context=".ui.photo_gallery.PhotoGalleryFragment"
+    tools:ignore="ContentDescription">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/backToPhotoFrBtn"
+        android:id="@+id/photoGalleryBackButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginStart="@dimen/photo_gallery_back_button_margin_start"
+        android:layout_marginTop="@dimen/photo_gallery_back_button_margin_top"
         android:src="@drawable/ic_baseline_arrow_back_24"
         app:backgroundTint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/color1" />
+        app:tint="@color/green" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/photo_recycler"
+        android:id="@+id/photoGalleryRecycler"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/photo_gallery_recycler_margin_top"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backToPhotoFrBtn"
+        app:layout_constraintTop_toBottomOf="@+id/photoGalleryBackButton"
         tools:listitem="@layout/photo_item" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

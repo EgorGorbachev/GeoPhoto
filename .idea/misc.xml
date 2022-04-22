@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/GeoPhoto/app/src/main/res/drawable/edit_text_border.xml" value="0.3828125" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GeoPhoto/app/src/main/res/drawable/ic__706692_camera_equipment_gallery_photography_picture_icon.xml" value="0.3828125" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GeoPhoto/app/src/main/res/drawable/ic_worldwide.xml" value="0.3828125" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GeoPhoto/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GeoPhoto/app/src/main/res/layout/fragment_authentication.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GeoPhoto/app/src/main/res/layout/fragment_content_container.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GeoPhoto/app/src/main/res/layout/fragment_forgot_password.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GeoPhoto/app/src/main/res/layout/fragment_loading_screen.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GeoPhoto/app/src/main/res/layout/fragment_map.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GeoPhoto/app/src/main/res/layout/fragment_photo.xml" value="0.35336322869955156" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GeoPhoto/app/src/main/res/layout/fragment_photo_details.xml" value="0.3625850340136054" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GeoPhoto/app/src/main/res/layout/fragment_photo_gallery.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GeoPhoto/app/src/main/res/layout/fragment_registration.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GeoPhoto/app/src/main/res/layout/fragment_settings.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GeoPhoto/app/src/main/res/layout/fragment_splash_screen.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GeoPhoto/app/src/main/res/layout/info_menu.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GeoPhoto/app/src/main/res/layout/photo_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GeoPhoto/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

@@ -1,129 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="All">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <Button
+        android:id="@+id/photoToGalleryButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:insetTop="@dimen/photo_to_gallery_button_insert_top"
+        android:insetBottom="@dimen/photo_to_gallery_button_insert_bottom"
+        android:text="@string/photo_to_gallery_button"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/photoPhotoImageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/photoLocationInfoContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoToGalleryButton" />
 
-
-        <Button
-            android:id="@+id/toGalleryBtn"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:text="Gallery"
-            app:layout_constraintBottom_toTopOf="@+id/guideline1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/photoLocationInfoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/photo_location_info_container_padding"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/photo"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:scaleType="centerCrop"
-            app:layout_constraintBottom_toTopOf="@+id/locationInfoСontainer"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toGalleryBtn" />
-
-        <LinearLayout
-            android:id="@+id/locationInfoСontainer"
-            android:layout_width="match_parent"
+            android:id="@+id/photoLocationInfoIcon"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="5dp"
-            app:layout_constraintBottom_toTopOf="@+id/guideline3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="12dp"
-                android:src="@drawable/ic_baseline_location_on_24"
-                app:layout_constraintBottom_toTopOf="@+id/guideline2"
-                app:layout_constraintEnd_toStartOf="@+id/location"
-                app:layout_constraintStart_toStartOf="parent"
-                app:tint="@color/color4" />
-
-            <TextView
-                android:id="@+id/location"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="12dp"
-                android:gravity="center"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:text="Your location"
-                android:textColor="@color/color4"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toTopOf="@+id/guideline2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/addCommentBtn"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:backgroundTint="@color/color2"
-            android:text="Add comment"
-            app:layout_constraintBottom_toTopOf="@+id/takePhotoBtn"
-            app:layout_constraintTop_toBottomOf="@+id/locationInfoСontainer" />
-        <Button
-            android:id="@+id/takePhotoBtn"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:text="take a photo "
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/photo_location_info_icon_margin_bottom"
+            android:src="@drawable/ic_baseline_location_on_24"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toStartOf="@+id/photoLocationInfoText"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline2" />
+            app:tint="@color/green" />
 
         <TextView
-            android:id="@+id/hintPhoto"
+            android:id="@+id/photoLocationInfoText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Take a photo"
-            android:textColor="@color/color2"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/photo_location_info_text_margin_bottom"
+            android:gravity="center"
+            android:paddingStart="@dimen/photo_location_info_text_padding_start"
+            android:paddingEnd="@dimen/photo_location_info_text_padding_end"
+            android:text="@string/photo_location_info_text"
+            android:textColor="@color/green"
+            android:textSize="@dimen/photo_location_info_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.1" />
+    <Button
+        android:id="@+id/photoAddCommentButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/light_green"
+        android:insetTop="@dimen/button_insert"
+        android:insetBottom="@dimen/button_insert"
+        android:text="@string/photo_add_comment_button"
+        app:layout_constraintBottom_toTopOf="@+id/photoTakePhotoButton"
+        app:layout_constraintTop_toBottomOf="@+id/photoLocationInfoContainer" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.9" />
+    <Button
+        android:id="@+id/photoTakePhotoButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:insetTop="@dimen/button_insert"
+        android:insetBottom="@dimen/button_insert"
+        android:text="@string/photo_take_photo_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.83" />
+    <TextView
+        android:id="@+id/photoHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/photo_hint"
+        android:textColor="@color/green"
+        android:textSize="@dimen/photo_hint_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</layout>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.83" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 
